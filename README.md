@@ -1,56 +1,107 @@
-# 🛰️ Satellite Orientation Simulation Using Quaternions
 
-This Python project simulates a satellite's 3D orientation (attitude) using **quaternions**, which are widely used in aerospace for representing rotations efficiently and avoiding gimbal lock.
+ # 🛰️ Satellite Orientation Simulation Using Quaternions
 
-> 🚀 Accurately track how a satellite rotates over time based on angular velocity input using quaternion-based orientation math.
-
----
-
-## 📽️ Demo
-
-![Satellite Rotation Plot](https://github.com/your-username/satellite_orientation_quaternion/demo.gif)
-> Real-time plot of satellite orientation (Roll, Pitch, Yaw)
+This project simulates the 3D rotation (attitude) of a satellite using **quaternions**, which are mathematical tools commonly used in aerospace for smooth and efficient orientation tracking. The simulation visualizes how a satellite rotates over time based on constant angular velocity input.
 
 ---
 
-## 🧠 Concepts Covered
+## 📌 Key Features
 
-- Quaternion math for rotation
-- Angular velocity to quaternion integration
-- Satellite attitude simulation
-- Euler angle conversion for visualization
-- Real-time plotting using `matplotlib`
+- Simulate satellite orientation using quaternion math.
+- Convert quaternion orientation to Euler angles for easier interpretation (Roll, Pitch, Yaw).
+- Plot real-time orientation change using `matplotlib`.
+- Modular code with clean structure and reusable functions.
 
 ---
 
 ## 📁 Project Structure
 
 satellite_orientation_quaternion/
-├── main.py # Runs the simulation
-├── satellite.py # Satellite class with orientation logic
-├── utils.py # Quaternion math functions
-├── requirements.txt # Dependencies
-└── README.md # You are here!
+├── main.py # Main script to run the simulation
+├── satellite.py # Satellite class to update orientation
+├── utils.py # Quaternion math and normalization
+├── requirements.txt # Python package dependencies
+└── README.md # Project documentation (you are here)
 
-📦 Dependencies
-numpy
-scipy
-matplotlib
+---
 
-📊 Sample Output
-The script simulates a satellite rotating around the Z-axis and visualizes the orientation change over time:
-📈 Yaw increases linearly (since it’s rotating only around Z)
-✅ Smooth orientation updates using quaternion math
-🎯 Euler angles converted for better human-readable visualization
+## 🧠 Background: Why Quaternions?
+
+- Avoid **gimbal lock**, a common problem with Euler angles.
+- More efficient and numerically stable than rotation matrices.
+- Preferred in aerospace for representing and computing 3D orientations.
+
+---
+
+## 📦 Requirements
+
+Install the required Python packages using pip:
+pip install -r requirements.txt
+Or manually install them:
+pip install numpy scipy matplotlib
+
+---
+
+🚀 How to Run the Project
+1. Clone the Repository
+git clone https://github.com/your-username/satellite_orientation_quaternion.git
+cd satellite_orientation_quaternion
+2. (Optional) Create a Virtual Environment
+python -m venv venv
+# Activate:
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+3. Install the Dependencies
+pip install -r requirements.txt
+4. Run the Simulation
+python main.py
+A plot window will open showing the evolution of Roll, Pitch, and Yaw over time.
+
+🧪 Sample Output
+The simulation shows how a satellite rotates over time using quaternions. The orientation is converted to Euler angles and plotted:
 
 
-🧠 Why Quaternions?
--Quaternions are ideal for satellite orientation because they:
--Avoid gimbal lock
--Require less computation than rotation matrices
--Enable smooth interpolation and real-time updates
+
+📊 Simulation Logic
+Start with an initial orientation as a quaternion.
+
+Apply constant angular velocity (e.g., rotation around Z-axis).
+
+Compute quaternion derivative using angular velocity.
+
+Integrate the quaternion over time steps.
+
+Normalize the quaternion.
+
+Convert to Euler angles for plotting.
 
 📚 References
-NASA Technical Reports on Attitude Control
-Wikipedia: Quaternion Rotation
-SciPy Spatial Transform Docs
+NASA GNC Handbook
+
+Wikipedia: Quaternions and Spatial Rotation
+
+Scipy Spatial Transform Documentation
+
+🔮 Future Enhancements
+✅ Add 3D visualization using vpython or matplotlib 3D.
+
+✅ Simulate variable angular velocities or real IMU data.
+
+✅ Integrate with Kalman Filter for noisy data estimation.
+
+✅ Add GUI or web interface using Streamlit.
+
+🤝 Contributing
+Contributions and feedback are welcome! Feel free to fork the project and submit a pull request, or open an issue to report bugs or request features.
+
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+👨‍💻 Author
+Your Name
+B.Tech in AI & Data Science
+https://www.linkedin.com/in/urvashi-singh-25495a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+🛰️ "Simulate, analyze, and visualize how satellites fly in space — using clean, efficient Python code!"
