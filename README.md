@@ -17,11 +17,21 @@ This project simulates the 3D rotation (attitude) of a satellite using **quatern
 ## 📁 Project Structure
 
 satellite_orientation_quaternion/
-├── main.py # Main script to run the simulation
-├── satellite.py # Satellite class to update orientation
-├── utils.py # Quaternion math and normalization
-├── requirements.txt # Python package dependencies
-└── README.md # Project documentation (you are here)
+
+├── main.py                 # Entry point of the simulation
+
+├── satellite.py            # Satellite class handling orientation logic
+
+├── utils.py                # Quaternion math helpers
+
+├── requirements.txt        # All required Python packages
+
+├── README.md               # Project documentation
+
+├── venv/                   # (optional) Virtual environment folder
+
+└── .gitignore              # Files/folders to ignore in Git
+
 
 ---
 
