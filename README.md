@@ -48,14 +48,17 @@ git clone https://github.com/your-username/satellite_orientation_quaternion.git
 cd satellite_orientation_quaternion
 2. (Optional) Create a Virtual Environment
 python -m venv venv
+
 # Activate:
 # On Windows:
 venv\Scripts\activate
+
 # On macOS/Linux:
+
 source venv/bin/activate
-3. Install the Dependencies
+1. Install the Dependencies
 pip install -r requirements.txt
-4. Run the Simulation
+2. Run the Simulation
 python main.py
 A plot window will open showing the evolution of Roll, Pitch, and Yaw over time.
 
@@ -66,6 +69,7 @@ The simulation shows how a satellite rotates over time using quaternions. The or
 
 
 🔮 Future Enhancements
+
 ✅ Add 3D visualization using vpython or matplotlib 3D.
 
 ✅ Simulate variable angular velocities or real IMU data.
@@ -74,14 +78,12 @@ The simulation shows how a satellite rotates over time using quaternions. The or
 
 ✅ Add GUI or web interface using Streamlit.
 
-🤝 Contributing
-Contributions and feedback are welcome! Feel free to fork the project and submit a pull request, or open an issue to report bugs or request features.
 
 📜 License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 👨‍💻 Author
-Your Name
+Urvashi Singh
 B.Tech in AI & Data Science
 https://www.linkedin.com/in/urvashi-singh-25495a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
