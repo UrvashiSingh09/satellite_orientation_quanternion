@@ -42,7 +42,7 @@ pip install numpy scipy matplotlib
 
 ---
 
-🚀 How to Run the Project
+🚀 **How to Run the Project**
 1. Clone the Repository
 git clone https://github.com/your-username/satellite_orientation_quaternion.git
 cd satellite_orientation_quaternion
@@ -65,12 +65,13 @@ A plot window will open showing the evolution of Roll, Pitch, and Yaw over time.
 
 ---
 
-🧪 Sample Output
-The simulation shows how a satellite rotates over time using quaternions. The orientation is converted to Euler angles and plotted:<img width="1470" height="956" alt="Screenshot 2025-07-11 at 23 00 49" src="https://github.com/user-attachments/assets/dcd3b3af-7c5c-4ca2-8cbe-71413403b10f" />
+🧪 **Sample Output**
+The simulation shows how a satellite rotates over time using quaternions. 
+The orientation is converted to Euler angles and plotted:<img width="1470" height="956" alt="Screenshot 2025-07-11 at 23 00 49" src="https://github.com/user-attachments/assets/dcd3b3af-7c5c-4ca2-8cbe-71413403b10f" />
 
 ---
 
-🔮 Future Enhancements
+🔮 **Future Enhancements**
 
 ✅ Add 3D visualization using vpython or matplotlib 3D.
 
@@ -82,12 +83,12 @@ The simulation shows how a satellite rotates over time using quaternions. The or
 
 ---
 
-📜 License
+📜 **License**
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 ---
 
-👨‍💻 Author
+👨‍💻 **Author**
 Urvashi Singh
 B.Tech in AI & Data Science
 https://www.linkedin.com/in/urvashi-singh-25495a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
