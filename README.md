@@ -60,13 +60,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 2. Run the Simulation
 python main.py
+
 A plot window will open showing the evolution of Roll, Pitch, and Yaw over time.
 
+---
 
 🧪 Sample Output
 The simulation shows how a satellite rotates over time using quaternions. The orientation is converted to Euler angles and plotted:<img width="1470" height="956" alt="Screenshot 2025-07-11 at 23 00 49" src="https://github.com/user-attachments/assets/dcd3b3af-7c5c-4ca2-8cbe-71413403b10f" />
 
-
+---
 
 🔮 Future Enhancements
 
@@ -78,9 +80,12 @@ The simulation shows how a satellite rotates over time using quaternions. The or
 
 ✅ Add GUI or web interface using Streamlit.
 
+---
 
 📜 License
 This project is licensed under the MIT License – see the LICENSE file for details.
+
+---
 
 👨‍💻 Author
 Urvashi Singh
