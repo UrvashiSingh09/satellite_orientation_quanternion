@@ -91,5 +91,7 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 👨‍💻 **Author**
 Urvashi Singh
 B.Tech in AI & Data Science
+
+linkedin-
 https://www.linkedin.com/in/urvashi-singh-25495a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
